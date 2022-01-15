@@ -99,7 +99,7 @@ header{
 }
 .influencer-img{
     position: relative;
-    text-align: center;
+    text-align: center;    
 }
 .influencer-img img{
     width: 80%;
@@ -294,15 +294,21 @@ footer p{
     .popular-collections,.influencer-plan,.header-container{
         grid-template-columns: repeat(2,1fr);
     }
-    .collection,.header-container,.plan-detail{
+    .header-container{
+        grid-row-gap: 30px; 
         flex-direction: column;
-        align-items: center;
-        display: flex;
-        grid-row-gap: 30px;        
+        display: flex;               
+    }
+    .collection-img{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .collection-detail{
+        margin-left: 30px;
     }
     .influencer-img::before{
         position: absolute;
-        top: 10px;
+        top:10px;
         left: 150px;
     }
     .influencer-img img{
